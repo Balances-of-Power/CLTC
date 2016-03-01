@@ -1,0 +1,225 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{pifont}
+\usepackage{color}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\DeclareMathOperator*{\argmin}{argmin}
+
+%%%% New commands %%%%
+\def\Pr{\mbox{Pr}}
+\def\PR{\mbox{Pr}}
+\newcommand{\yes}{\operatorname{yes}}
+\newcommand{\no}{\operatorname{no}}
+\newcommand{\tilf}{\tilde{f}}
+\newcommand{\bias}{\tilf}
+\newcommand{\B}{\mbox{Big}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+
+\newcommand{\tick}[0]{\checkmark}
+
+\newcommand{\nicolasc}{\ding{110}\ding{43}\textcolor{blue}}
+\newcommand{\benjamin}{\ding{110}\ding{43}\textcolor{green}}
+
+\pagenumbering{gobble}
+
+\title{(Im)balances of Power in the Age of Personal Data}
+\author{Principal Investigator: Paul Laskowski\\
+paul@ischool.berkeley.edu}
+\begin{document}
+
+\maketitle
+
+\subsection*{Grant Category: Multi-year}
+I would appreciate consideration of a one-year grant if the multi-year grant is not awarded.
+
+\subsection*{Additional Key Personnel}
+Benjamin Johnson\\johnsonb@andrew.cmu.edu
+
+\subsection*{Project Proposal Abstract}
+Using technologies that record and analyze our purchases and behaviors, businesses are presenting us with tremendous opportunities, but also eroding our expectation of privacy.  To assess the true cost of personal data collection, we must look beyond individual decisions to how the cumulative impact of many citizens influences technology and institutions.   Improvements in data collection may carry risks that range from emboldened repressive elements in government, to a reduction in privacy choices by firms that seek to profile our preferences.
+
+This proposal examines the role of citizens as a whole, especially in relation to governments and corporations. We seek to measure how individual privacy choices tilt the playing field that all citizens face. The ultimate goal is a more complete and more accurate assessment of the costs of personal data collection, one that may benefit the public dialogue about data collection and inform future policy discussions.
+
+Our primary research methods will involve development and analyses of game-theoretic economic models describing interactions between consumers, governments, corporations and other potential actors.  After examining current trends in personal data collection, we will attempt to extrapolate them far beyond the present day.  The ultimate deliverable for the project will be a report outlining possibilities and accompanying consequences for personal data exchange markets 30 years into the future.
+
+
+\subsection*{Key Deliverables}
+\begin{itemize}
+\item Four or more conference papers on the subject of imbalances of power among individuals, corporations, and/or governments.
+\item One journal paper on imbalances of power between individuals and corporations
+\item One journal paper on imbalances of power between individuals and governments
+\item One extensive report on the 30-year future of personal data markets
+\end{itemize}
+\newpage
+
+\pagenumbering{arabic}
+\subsection*{Introduction}
+
+What truly matters when protecting our personal data?   We live in a world where our purchases, browsing history, and even mouse clicks are logged by computer systems and increasingly analyzed.  While businesses and governments have identified tremendous opportunities in data like this, how can we measure the corresponding costs associated with the privacy we are losing?  
+
+One avenue is to consider individual decisions.  Economic models let us predict how much firms can price discriminate, based on their knowledge of a consumer~\cite{calzolari2006optimality, taylor2004consumer}.  Surveys give us insight into how much consumers value different types of personal information.  Meanwhile, behavioral studies reveal how consumers may give up their data for simple convenience, despite how much they say they value keeping it secret \cite{acquisti2007can,Grossklags:WEIS07,acquisti2004privacy}.
+
+Yet a focus on individual decisions misses a large part of what makes privacy valuable, if not the most important part.  Writings by privacy commentators reveal a deep concern over how mass collection of personal data will affect consumers as a whole, and the balance of power between consumers, governments, and corporations.  The Electronic Frontier Foundation's main page on privacy argues that ``national governments must put legal checks in place to prevent abuse of state powers."  Similarly, the Bloomberg \emph{Wired for Repression} series argues, ``In authoritarian countries throughout the Middle East and North Africa, Western surveillance tools have empowered repression.''  As Valentino-Devries, Singer-Vine and Soltani recently argued in the Wall Street Journal, increasingly targeted pricing by companies ``diminishes the Internet's role as an equalizer.'' 
+
+Though sweeping in scope, we must grapple with risks like these if we are to assess the true cost of collecting personal data.  It is not enough to look at individual decisions in isolation because the cumulative impact of individual decisions can change technology and institutions.  Profiling individual consumers may become easier as more data is available.  Enhanced data collection may embolden repressive elements in government, increasing the risk for dissidents.  Consumers may face reduced privacy choices if companies can neglect privacy-conscious individuals.
+
+This proposal therefore examines the role of citizens as a whole, especially in relation to governments, corporations, and other actors.  I seek to measure how individual privacy choices may tilt the playing field that citizens face.   The ultimate goal is a more complete and more accurate assessment of the costs of personal data collection, one that may benefit the public dialogue about data collection and inform future policy discussions.
+
+\subsection*{Research Question 1: How does the collection of personal data affect the balance of power between citizens and the state?}
+
+Modern tools for data collection give considerable advantage to governments in monitoring their own citizens and foreign nationals~\cite{acquisti2009predicting}.  Once regarded chiefly as a problem of third-world autocracies, many western governments, including the United States, now face widespread scrutiny over the potential abuse of surveillance technology~\cite{schneier2013oppression}.   Document leaks and news reports have revealed an extensive surveillance apparatus, fueling a lively debate about the proper role of intelligence agencies in society~\cite{landau2013making,landau2014}. Proponents maintain that surveillance programs are instrumental in preventing terrorist attacks. Opponents counter that spying erodes individual privacy and facilitates totalitarian states.
+
+In an exploratory study, I worked with colleagues at UC Berkeley to examine this issue through the lens of government incentives~\cite{laskowskigovernment}.  While abusive governments will certainly use surveillance technology to their advantage, a more subtle question is whether technology leads governments to be more or less repressive in the first place.  Using a stylized game theoretic model, we examined how surveillance technology influences the incentives for a government to abuse its power.
+
+To support our results, my team was careful to separate the use of surveillance technology from its abuse.  This reflects our understanding that the collecting of citizen data by governments is not inherently corrupt.  Moreover, many applications of surveillance, including for law enforcement and security, are uncontroversial.  We therefore adopted a working definition of abuse as the use of power \textit{in excess of moral or ethical standards}.  
+
+Our game theoretic model suggests that surveillance technology incentivizes greater abuse of power by governments.  Under surprisingly general conditions, stronger surveillance technology will lead a rational government that wishes to stay in power to abuse its power more.   Although we recognize that well-meaning government officials may ignore such incentives in order to behave ethically, we believe that incentives matter for explaining differences in abuse levels. 
+
+While these initial results are promising, they open myriad directions for further study.  How does a rational government behave in the presence of multiple threats to its power, say a radicalized insurgency and a political opposition?  What explains differing levels of abuse by different governments?  What types of counter-technologies can tilt the playing field in favor of more benign governance?  By answering these questions, this initiative will shed light on how surveillance relates to government abuse and what technologies are most effective in promoting ethical governance. 
+
+\subsection*{Research Question 2: How does the collection of personal data affect the balance of power between consumers and corporations?}
+
+A second line of inquiry concerns the balance of power between consumers and corporations.  While individual privacy decisions by consumers have been thoroughly examined, we understand far less about how the privacy options that consumers face are generated, and how they may change in response to more advanced tracking technology.
+
+One area of rapid change is in the sharing of consumer data between firms.  Recognizing the potential opportunity that can come from linking consumer decisions across different merchants, a new generation of firms is appearing to mediate the sharing of consumer data.  In an early paper, my coauthors and I examined a simple scenario in which consumers purchased goods from two different firms in sequence~\cite{johnsoncaviar}.  When firms are allowed to sell their purchase data to each other, they can leverage the information they learn about consumers to set discriminatory prices~\cite{odlyzko2003privacy}.
+
+Like previous studies in this lineage~\cite{calzolari2006optimality, acquisti2005conditioning}, we find that the ultimate consequences for consumers depend on whether they are myopic, regarding each purchase in isolation, or fully rational, choosing products strategically in light on how purchases may affect future price offers.  While myopic consumers always lose out when firms share information, sophisticated consumers will mitigate this effect by limiting the information they reveal through purchases.
+
+Results like ours are suggestive of the changing landscape facing consumers, but they fall short of describing a world in which data collection is pervasive.  Once consumers reveal information about themselves, it may remain valuable to firms for years into the future.  Consumers may be risk averse, unsure of what goods they will want to buy into the future.  They may also find that protecting their privacy over time requires too much continued effort, and it is more practical to accept discriminatory practices.
+
+To better understand these possibilities, we will prioritize the development of models with more than two firms and a continuum of consumers.  In the simplest possible setup, consumers and firms interact in an infinite series of time steps.  In each interval, consumers face a purchasing decision, and firms may be allowed to share the information they collect with each other.  Both consumers and firms value present payoffs more than future ones, but they may differ in their discount rates and risk preferences.  
+
+Such a setup could investigate economic effects that have so far been absent from the literature.  While most results to date have been essentially neoclassical -- finding that more information increases welfare -- a time-based model would let us ask whether consumers face increasing pressure to avoid information-revealing purchases over time, with potential welfare-reducing consequences.  We will also investigate the distribution of welfare between firms and consumers -- do repeated purchases continue to erode consumer surplus toward zero, or can strategic consumers mitigate this effect?
+
+
+
+
+\subsection*{Research Question 3: What economic structures for exchanging personal data could exist 30 years into the future?}
+
+The previous two research questions are about current trends in personal data collection.  Through economic modeling, I hope to uncover the directions in which the balance of power between consumers, governments, and corporations is shifting.  In my final research question, I hope to extrapolate these trends well into the future.  In thirty years time, what structures could govern the flow of personally identifiable data?  Will consumers maintain any privacy in the face of advancing data collection technologies?  What relationships could exist between citizens, governments, and corporations?
+
+The end result of this investigation will not be a forecast, but rather a collection of plausible scenarios, each one grounded in economic theory and based on first principles.  Although thirty years is a long way to peer into the future, the long time horizon may actually simplify the task in certain ways.  Technological frictions are likely to disappear over time, and individuals are likely to gain an understanding of how privacy markets work, making decisions more in line with their incentives.  Moveover, we can identify at least two modern trends that are likely to persist over the next three decades, motivating economic analysis.
+
+\begin{enumerate}
+\item \textit{Algorithms for profiling users based on limited data will continue to improve}.  With advances in machine learning and other technologies, more and more aspects of user behavior are being mined to extract economically-relevant information.  Future firms and governments will do more with less data, leveraging all available information to build a complete picture of our preferences.  The structure of the personal data market depends on how information from different sources combines to generate value.  If a single firm has enough information to build an accurate prediction model, the personal data market may remain fragmented and competitive.  Meanwhile, if many sources of information are needed to predict behavior, the market will tend towards a natural monopoly, which may entail further risks for consumers.
+
+\item \textit{Countermeasures for anonymizing users will advance to represent their economic incentives.}  As firms find new sources of information about consumers, technologies will be developed to limit their effects.  Consumers may employ anonymous browsing, search agents, or anonymous payment mechanisms to make purchases while revealing minimal information.  An arms race therefore exists between consumers and the parties that want to track them.  The main limitation on consumer anonymity, however, is likely to be economic rather than technological.  For every consumer that wants to hide their preferences, another one will want to reveal theirs in order to take advantage of a good price offer.  Individuals that employ anonymization will implicitly signal their own characteristics, and  adverse selection may lead to more and more information sharing.
+
+\end{enumerate}
+
+While modeling these trends to identify economic outcomes is an ambitious project, I believe that my research team is in a better position than any other to approach the task.  Our previous work in modeling personal information is already future-oriented, looking beyond individual decisions to identify persistent effects on citizens as a whole.  We have experience working with the a mix of variables that can be usefully abstracted to thirty-year outcomes.  In crafting future scenarios, we will ensure that each one is grounded in first principles and individual incentives.  To complement our economic expertise, we will seek out collaborations with privacy advocates, policy experts, and others who may draw a more complete picture of future outcomes.
+
+
+\subsection*{Research Methods}
+
+To address these research questions, my research team will develop and analyze economic models, especially using techniques from economic game theory.  This builds on our strength and experience, as evidenced by our past work on these questions \cite{laskowskigovernment,johnsoncaviar}. The field of game theory is especially well-aligned with these research questions because it allows us to bridge the gap from individual incentives to the standing of citizens as a whole.  The structure of a game allows us to identify when an individual's privacy decision imposes negative externalities on other individuals, and when the cumulative impact of many decisions disadvantages citizens as a whole.
+My team also hopes to collaborate with other researchers to validate our models both through behavioral experiments, and using publicly available data on consumers, governments and corporations.
+
+\subsubsection*{Model Development}
+A game theoretic model can be applied to scenarios in which the incentives of various actors (e.g. consumers, governments, and/or corporations) are well-approximated by real-valued utility functions, and the consequences of any set of actions by these actors is well-defined (either probabilistically or concretely). When the nature of actors is concretely described (e.g. rational, bounded rational, myopic, etc\dots) these utility functions may often be derived from first principles. For example, we might assume that a government entity acts to maximize its probability of retaining power.  The analysis of a model having this assumption will then tell us something about how a government that has this motivation might behave in different scenarios.  Even though the motivations of real governmental officials are more complex than this -- for example, they may try to behave ethically even if it lowers their odds of staying in power -- such a model can still be useful, giving us an idea of how the balance of power between a government and its citizens might respond to changing surveillance technology.  In short, a model's predictive power depends on the extent to which its actors' assumed nature corresponds with the nature of their present and/or future real-world counterparts.
+
+
+
+\subsubsection*{Game-theoretic Analyses}
+
+Once a model has been constructed to describe a privacy scenario, we use tools from game theory to derive the model's equilibrium states.  That is, we determine the possible outcomes of the model under the assumption that each actor is making their preferred choice simultaneously or in the specified sequence.  For example, we may consider a game between a set of consumers and a set of corporations in which the corporations sell consumers' personal data to each other. An equilibrium outcome of this model is a prediction of how the actors will behave.  By characterizing the equilibrium, we can investigate how well consumers fare in response to different governmental policies and other model parameters.
+
+
+
+\subsubsection*{Model Validation}
+
+The explanatory power of a model becomes stronger when its predictions can be validated with existing data, and our aim is to perform this validation when possible.  For this purpose, we intend to partner with researchers in behavioral economics to conduct experiments that capture aspects of our modeling approach. We also plan to incorporate quantitative information about consumers, corporations, and governments from publicly-available sources to provide additional validation.  
+
+%Various forms of data on the distribution of Governments: e.g. corruptions perception index from transparency international.
+%Corporations: better business bureau in the US, various online review systems.
+%Individual consumers:  
+%Can we use (any) data to put dollar amounts on some of these costs?
+%
+%variation in strength of technology that seems exogenous, e.g. if us allows microsoft to sell stronger encryption to some country???
+%look for events that happen that provide some randomness w.r.t .various variables.
+%look at value for different types of data ..
+%black market data on credit card numbers etc.. (probly not) 
+
+%\subsection*{Related Work}
+%Many papers from Caviar paper.
+%8, 11, behavioral studies and 6, 
+%9, 10 first sentence
+%7 somewhere maybe first sentence, survey paper
+%17, maybe first sentence
+%15 price discrimination
+
+\subsection*{Broader Impact}
+
+My team believes that personally identifiable data will prove to be one of the most pivotal cybersecurity issues of the next decade.  Like the Center for Long-Term Cybersecurity as a whole, we are motivated by the hope of making a positive impact on cybersecurity practice; we were drawn to the area of personal data after identifying links between privacy and abuses of power against ordinary citizens.  We would be thrilled to join the CLTC community and expect it to enrich our work with diverse perspectives and a sense of common purpose.
+
+Beyond the CLTC community, we hope our work will be interesting to several audiences.  One is the growing community of researchers that apply economic tools to study privacy.  In our exploratory work, we have already advanced the modeling toolkit that that can be applied to describe personally identifiable data, extending two-firm privacy models to account for a continuous distribution of consumers.  We expect our work to yield more methodological advances, beginning with tools to describe repeated privacy decisions over an infinite sequence of time intervals.  In the area of governmental power, we  aim to focus our efforts on parameters like government abuse and dissident speech, bringing economic models more in line with real-world features that activists and ordinary citizens ultimately care about.
+
+A further audience for our work includes policy makers.  Our pricing models will incorporate regulation as a parameter, allowing us to study the effects of limiting the use or sharing of personally identifiable data.  Government officials may be further interested in how tools for analyzing personal data that are exported overseas cause other regimes to be more or less corrupt.  In these areas, we hope to create actionable principles that policy makers can use to enhance the position of ordinary citizens against corporations and abusive states.
+
+Finally, we expect our work to generate insights for consumer advocates, human rights advocates, and anyone interested in the standing of individuals in relation to governments and corporations.  A basic finding of our work is that the collection of personal data has consequences for how much surplus individuals give up to corporations, and the risks they face from government abuse.  We therefore hope to give new structure to the debate over privacy, connecting it to other human rights and quantifying the cost to citizens when it is compromised.
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+
+
+\newpage
+
+\subsection*{Key Personnel}
+
+Paul Laskowski - Principle investigator, responsible for economic analysis, as well as project scope and direction.
+
+\noindent Benjamin Johnson - Research scientist, responsible for economic analysis, especially mathematical foundations and correctness.
+
+\subsection*{Budget}
+
+\begin{itemize}
+\item \$85K/yr: Salary plus benefits for one research scientist
+\item \$10K/yr: Travel budget for attending research conferences to present papers 
+\item \$5K/yr: Experiment budget primarily for conducting behavioral experiments
+\end{itemize}
+
+\noindent This project currently has no other potential funding sources.
+
+\subsection*{Key Project Milestones}
+
+\noindent \textbf{Jan 2016}: Analysis begins on first two research questions in parallel\\
+\noindent \textbf{July 2016}: Internal deadline to submit first two papers for conference inclusion\\
+\noindent \textbf{Aug 2016}: Analysis begins on 30-year outlook for privacy\\
+\noindent \textbf{Dec 2016}: Internal deadline to submit first papers for journal publication\\
+\noindent \textbf{Mar 2017}: Completion of 30-Year Privacy Outlook\\
+\noindent \textbf{July 2017}: Internal deadline to submit third and fourth papers for conference inclusion\\
+\noindent \textbf{Dec 2017}: Completion of work extensions and end of project work.\\
+
+
+\newpage
+\pagenumbering{gobble}
+\subsection*{Bios of Key Personnel}
+
+\subsubsection*{Paul Laskowski}
+
+Paul Laskowski is a visiting assistant professor at the UC Berkeley School of Information.  His research spans the areas of computer networking and microeconomics, with a focus on how policy and network architecture combine to influence consumer choice and technological progress.  At the School of Information, Paul works as part of a team to develop the new Master of Information and Data Science, an online degree program geared towards working data professionals.  In this role, Paul has taught several courses on statistics and programming, and regularly contributes to discussions of curriculum development.  Paul received his Ph.D. from Berkeley's School of Information, and earned his bachelor's in applied mathematics from Harvard University.  Before returning to Berkeley, he was a postdoctoral fellow at the Carnegie Mellon-Portugal program.  Paul has also worked as a developer for Project Indigo, an agent-based modeling environment, and once served, along with Benjamin Johnson, on the founding board of a national gymnastics organization.
+
+\subsubsection*{Benjamin Johnson}
+
+Benjamin Johnson is a research associate at Carnegie Mellon University. His current work involves applying game theory to agility challenges in cybersecurity.  Over the past few years, his research has spanned multiple areas ranging from quantum complexity theory, to network routing, to user incentives for security investments, to steganography and steganalysis, to timing games, to computer authentication using brainwave signals.  Benjamin has also taught more than a dozen different courses in mathematics at the university level, and is an expert at applying mathematical tools to solve problems in applied security.  Benjamin received his Ph.D. from Berkeley's Group in Logic and the Methodology of Science, a cross-departmental program integrating math, computer science, and philosophy.  He also has a masters degree in Mathematics and a bachelors degree in Mathematics with secondary teaching licensure.  Outside of academia, Benjamin operates a small software startup that develops educational and event registration software; and he serves on the Board of Directors for the National Association of Intercollegiate Gymnastics Clubs, an organization he founded as a graduate student.
+
+\end{document}

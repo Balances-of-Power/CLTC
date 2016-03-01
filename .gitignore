@@ -1,6 +1,6 @@
-CLTC_Proposal.synctex.gz
-CLTC_Proposal.aux
-CLTC_Proposal.log
-CLTC_Proposal.pdf
-CLTC_Proposal.blg
-CLTC_Proposal.bbl
+*.blg
+*.bbl
+*.aux
+*.log
+*.pdf
+*.synctex.gz
