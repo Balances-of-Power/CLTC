@@ -9,6 +9,10 @@
 \usepackage{mathtools}
 \usepackage{pifont}
 \usepackage{color}
+%\usepackage{biblatex}
+\usepackage{setspace}
+\usepackage{blindtext}
+%\onehalfspacing
 
 
 \newtheorem{theorem}{Theorem}
@@ -63,7 +67,7 @@ Our primary research methods will involve development and analyses of game-theor
 \begin{itemize}
 \item A characterization of the effects that personal data collection can have on the balance of power between citizens, governments, and corporations, as identified through game theoretic modeling.
 \item An assessment of potential factors that affect the evolution of attitudes, technologies, practices, and laws related to personal data, as measured by human-subject experiments.
-\item Conference papers and two or more journal articles that disseminate our findings to the academic community.
+\item Six or more conference papers and two or more journal articles that disseminate our findings to the academic community.
 \item One extensive report on 30-year future scenarios of personal data markets.
 \end{itemize}
 \newpage
@@ -81,7 +85,7 @@ The use of personal data by governments is of special concern to marginalized gr
 \item \textbf{Dynamic Research Focus.}  The ultimate goal of our initiative is an understanding of the ways in which personal data technologies may be used (and abused) far into the future.  Creating this outlook demands that we appreciate the process by which notions of privacy evolve over time.  While the capabilities of a technology affect the ways that governments and corporations exert power, these capabilities are mediated by social practices, laws, and countervailing technologies, which all change in response to privacy attitudes.  Recognizing the importance of these issues, we added a new research question that is explicitly tied to the dynamic evolution of privacy.  This question will serve as a bridge to our final goal of understanding the role of personal data, 30 years into the future.
 
 
-\item \textbf{Plans for Experimentation.} To support our dynamic research focus, we will investigate the evolution of privacy attitudes with a series of human-subject experiments.  Our design involves presenting online subjects with information regarding the use of an emerging technology, especially one that involves an abuse of power.  We seek to measure changes in attitudes towards privacy, specifically the extent to which an individual attributes responsibility for the appropriate use of personal data to users, corporations, and governments.  We expect this work to complement our game theoretic analysis, broaden our view beyond purely rational responses, and yield a more complete picture of the way personal data shapes balances of power.
+\item \textbf{Plans for Experimentation.} To support our dynamic research focus, we will investigate the evolution of privacy attitudes and data practices with a series of human-subject experiments.  Our first design explores the factors that cause individuals to oppose a use of personal data.  Participants will be presented with information regarding the use of an emerging technology, then asked to sign a petition that regulates the practice.  This framework allows us to explore the extent to which abuses of power lead to political opposition.  Our second design complements the first by asking how decision makers choose which uses of personal data to adopt.  We will ask subjects to imagine themselves in the role of government officials that must decide whether or not to deploy a new surveillance technology, depending on the nature of the threat to the government.  Taken together, we expect these experiments to complement our game theoretic analysis, broaden our view beyond purely rational responses, and yield a more complete picture of the way personal data practices may evolve over time.
 
 
 \end{enumerate}
@@ -140,16 +144,23 @@ To better understand these possibilities, we will prioritize the development of 
 Such a setup could investigate economic effects that have so far been absent from the literature.  While most results to date have been essentially neoclassical -- finding that more information increases welfare -- a time-based model would let us ask whether consumers face increasing pressure to avoid information-revealing purchases over time, with potential welfare-reducing consequences.  We will also investigate the distribution of welfare between firms and consumers -- do repeated purchases continue to erode consumer surplus toward zero, or can strategic consumers mitigate this effect?
 
 
-\subsection*{Research Question 3: What factors best explain the evolution of attitudes, laws, and practices related to the exchange of personal data?}
+\subsection*{Research Question 3: What factors best explain the evolution of attitudes and practices related to the exchange of personal data?}
 
-Our first two research questions are static in nature.  Through game theoretic analysis, we are able to see how the capabilities of a technology can affect balances of power.  Although data technologies advance over time, their capabilities are mediated by an evolving landscape of social factors.  These include the legal system, the use of counter-technologies, and cultural practices, all of which change in response to attitudes about privacy.  Therefore, to understand dynamic trends in the use of personal data, a central concern must be the way that these attitudes change over time.
+A common theme in our research is the tension between the direct benefits a government or firm receives from a use of personal data and opposition from individuals.  Game theoretic modeling gives us a way to understand how these forces interact in an environment with strategic actors, but such models are uncalibrated in the sense that results are directional and we have no way of estimating the response to a particular new technology.  To reason about what personal data practices may be prevalent in the future, we need a more quantitative understanding of the factors that motivate citizens to oppose a practice, as well as those that motivate an institution to adopt it.  We will pursue this understanding with a series of randomized, human-subject experiments.  This methodology is well-suited to our problem space, since it allows us to measure causal effects without the endogeneity issues inherent in a study of personal data practices.
 
-Our third research question examines the factors that explain changes in the way people view privacy and the use of personal data.  We plan to investigate this question using a series of randomized, human-subject experiments, which we will conduct online.  Subjects will be divided into a number of treatment conditions and presented with information regarding the use of a privacy-related technology by their government.  A key explanatory variable is the degree to which abuses of the technology are revealed.  In one treatment condition, subjects are only told that the new technology provides access to sensitive information.  In a second treatment condition, subjects are informed of actual consequences to individuals that have their privacy compromised.  A control group is presented with unrelated information to form a baseline for analysis.  Our dependent variables are designed to capture attitudes towards privacy.  In particular, we will measure the extent to which individuals place responsibility on users, corporations, and on the legal system to regulate the use of personal data.
+Our first experiment focuses on factors that cause citizens to oppose a use of personal data.   There is a large body of work that applies experiments to study attitudes towards privacy~\cite{acquisti2007can,Grossklags:WEIS07,acquisti2004privacy, horne2015privacy, xie2006volunteering, baker2012does, kugler2015surveillance}.  To study opposition in particular, we will build our design around the act of signing a petition.  Subjects will be presented with information about a new application of personal data, then invited to sign a petition that opposes it.  Guided by our game theoretic models, we will incorporate abuse of power as a key explanatory variable.  Subjects in one condition will only be given information about the invasiveness of a practice.  In a second condition, subjects will learn how abuses of power have negatively impacted individuals.  A control group will read about a practice that doesn't involve personal data.
+
+A petition framework has the advantage that subjects may perceive real-world consequences to their action.  We expect our measure to reflect not just a willingness to sign a petition, but political motivation in general.  Accordingly, we believe our results will generalize to democratic governments, firms, and even authoritarian states that are nevertheless sensitive to public opinion.
+
+
+
+Our second experiment will address the perspective of a government that must decide what personal data to collect and how to use it.  Participants will be asked to imagine themselves in the role of government officials that are considering whether or not to deploy a newly developed surveillance technology that provides improved access to the behavior of all citizens.  Guided again by our game theoretic models, we plan to investigate how different threats to government power lead to different decisions.  Specifically, we will vary both the size of the opposition to the government, as well as its intensity, which may range from peaceful demonstrations to armed conflict.  By searching in this grid, we hope to shed light on the  dynamic interaction between abuse and opposition.
+
 
 In designing our initial round of experiments, we plan to focus on a single technology: algorithmic facial recognition.  Central to our choice is the timing of this emerging technology.  Although several commercial products now feature facial recognition, most consumers have yet to grapple with the emerging consequences to their personal privacy.  Moreover, the legal system and cultural practices have yet to account for this technology's potential ubiquity.  The current timing gives us a rare opportunity to present information regarding facial recognition to citizens that have not yet formed a strong opinion.  The details that we choose to include may therefore have a greater impact on our subjects' attitudes.  Moreover, we may expect stories of the use (and abuse) of facial recognition to emerge in the next few years, allowing us to evaluate our results in light of actual evolving public attitudes.
 
 
-
+%Our first two research questions are static in nature.  Through game theoretic analysis, we are able to see how the capabilities of a technology can affect balances of power.  Although data technologies advance over time, their capabilities are mediated by an evolving landscape of social factors.  These include the legal system, the use of counter-technologies, and cultural practices, all of which change in response to attitudes about privacy.  Therefore, to understand dynamic trends in the use of personal data, a central concern must be the way that these attitudes change over time.
 
 
 \subsection*{Research Question 4: What economic structures for exchanging personal data could exist 30 years into the future?}
@@ -174,16 +185,14 @@ To pursue these research questions, my team will employ economic modeling, espec
 
 
 
-\subsubsection*{Model Development}
+\subsubsection*{Game-theoretic Modeling}
 The field of game theory is especially well suited to an exploration of power dynamics because it allows us to bridge the gap from individual incentives to the standing of citizens as a whole.  The structure of a game allows us to identify when an individual's privacy decision imposes negative externalities on other individuals, and when the cumulative impact of many decisions disadvantages citizens as a whole.  Such effects cannot be seen with research methods that focus only on individual decisions. 
+Once a model has been constructed to describe a privacy scenario, we use tools from game theory to derive the model's equilibrium states, which correspond to predictions of behavior. For example, we may consider a game between a set of consumers and a set of corporations in which the corporations sell consumers' personal data to each other.  By characterizing the equilibrium of this game, we can investigate how well consumers fare in response to different governmental policies and other model parameters.
+
+% That is, we determine the possible outcomes of the model under the assumption that each actor  makes their preferred choice simultaneously or in the specified sequence.  
 
 %A game theoretic model can be applied to scenarios in which the incentives of various actors (e.g. consumers, governments, and/or corporations) are well-approximated by real-valued utility functions, and the consequences of any set of actions by these actors is well-defined (either probabilistically or concretely). When the nature of actors is concretely described (e.g. rational, bounded rational, myopic, etc\dots) these utility functions may often be derived from first principles. For example, we might assume that a government entity acts to maximize its probability of retaining power.  The analysis of a model having this assumption will then tell us something about how a government that has this motivation might behave in different scenarios.  Even though the motivations of real governmental officials are more complex than this -- for example, they may try to behave ethically even if it lowers their odds of staying in power -- such a model can still be useful, giving us an idea of how the balance of power between a government and its citizens might respond to changing surveillance technology.  In short, a model's predictive power depends on the extent to which its actors' assumed nature corresponds with the nature of their present and/or future real-world counterparts.
 
-
-
-\subsubsection*{Game-theoretic Analyses}
-
-Once a model has been constructed to describe a privacy scenario, we use tools from game theory to derive the model's equilibrium states.  That is, we determine the possible outcomes of the model under the assumption that each actor  makes their preferred choice simultaneously or in the specified sequence.  For example, we may consider a game between a set of consumers and a set of corporations in which the corporations sell consumers' personal data to each other. An equilibrium outcome of this model is a prediction of how the actors will behave.  By characterizing the equilibrium, we can investigate how well consumers fare in response to different governmental policies and other model parameters.
 
 
 
@@ -236,18 +245,28 @@ My team believes that personally identifiable data will prove to be one of the m
 
 Beyond the CLTC community, we hope our work will be interesting to several audiences.  One is the growing community of researchers that apply economic tools to study privacy.  In our exploratory work, we have already advanced the modeling toolkit that that can be applied to describe personally identifiable data, extending two-firm privacy models to account for a continuous distribution of consumers.  We expect our work to yield more methodological advances, beginning with tools to describe repeated privacy decisions over an infinite sequence of time intervals.  In the area of governmental power, we  aim to focus our efforts on parameters like government abuse and dissident speech, bringing economic models more in line with real-world features that activists and ordinary citizens ultimately care about.
 
-A further audience for our work includes policy makers.  Our pricing models will incorporate regulation as a parameter, allowing us to study the effects of limiting the use or sharing of personally identifiable data.  Government officials may be further interested in how tools for analyzing personal data that are exported overseas cause other regimes to be more or less corrupt.  In these areas, we hope to create actionable principles that policy makers can use to enhance the position of ordinary citizens against corporations and abusive states.
+A further audience for our work is policy makers.  Our pricing models will incorporate regulation as a parameter, allowing us to study the effects of limiting the use or sharing of personally identifiable data.  Government officials may be further interested in how tools for analyzing personal data that are exported overseas cause other regimes to be more or less corrupt.  In these areas, we hope to create actionable principles that policy makers can use to enhance the position of ordinary citizens against corporations and abusive states.
 
 Finally, we expect our work to generate insights for consumer advocates, human rights advocates, and anyone interested in the standing of individuals in relation to governments and corporations.  A basic finding of our work is that the collection of personal data has consequences for how much surplus individuals give up to corporations, and the risks they face from government abuse.  We therefore hope to give new structure to the debate over privacy, connecting it to other human rights and quantifying the cost to citizens when it is compromised.
 
-
+%\renewcommand{\bibfont}{\small}
+%\begingroup
+%\setstretch{0.8}
+%\setlength\bibitemsep{0pt}
+%%\bibliographystyle{plain}
+%%\bibliography{references}
+%\printbibliography
+%\endgroup
+%
+\begin{spacing}{0.5}
+\setstretch{0.7}
 \bibliographystyle{plain}
 \bibliography{references}
+\end{spacing}
 
 
 
-
-\newpage
+%\newpage
 
 \subsection*{Key Personnel}
 
@@ -267,13 +286,22 @@ Paul Laskowski - Principle investigator, responsible for economic analysis, as w
 
 \subsection*{Key Project Milestones}
 
-\noindent \textbf{Jan 2016}: Analysis begins on first two research questions in parallel\\
-\noindent \textbf{July 2016}: Internal deadline to submit first two papers for conference inclusion\\
-\noindent \textbf{Aug 2016}: Analysis begins on 30-year outlook for privacy\\
-\noindent \textbf{Dec 2016}: Internal deadline to submit first papers for journal publication\\
-\noindent \textbf{Mar 2017}: Completion of 30-Year Privacy Outlook\\
-\noindent \textbf{July 2017}: Internal deadline to submit third and fourth papers for conference inclusion\\
-\noindent \textbf{Dec 2017}: Completion of work extensions and end of project work.\\
+\noindent \textbf{Jan 2016}: Began analysis on first two research questions in parallel\\
+\noindent \textbf{April 2016}: First model-based conference paper was submitted\\
+\noindent \textbf{July 2016}: Submit second model-based conference paper\\
+\noindent \textbf{Sep 2016}: Complete first pilot experiment with human subjects\\
+\noindent \textbf{Nov 2016}: Complete first full-scale experiment with human subjects\\
+\noindent \textbf{Dec 2016}: Submit first conference paper describing experimental results\\
+\noindent \textbf{Feb 2017}: Complete second pilot experiment with human subjects\\
+\noindent \textbf{Mar 2017}: Complete second full-scale experiment with human subjects\\
+\noindent \textbf{May 2017}: Submit second conference paper describing experimental results\\
+\noindent \textbf{Aug 2017}: Submit third model-based conference paper\\
+\noindent \textbf{Nov 2017}: Submit experiment-based journal publication.\\
+\noindent \textbf{Jan 2018}: Submit fourth model-based conference paper\\
+\noindent \textbf{Feb 2018}: Begin analysis on 30-year outlook\\
+\noindent \textbf{Mar 2018}: Submit model-based journal publication\\
+\noindent \textbf{Apr 2018}: Complete report on 30-year outlook\\
+
 
 
 \newpage
